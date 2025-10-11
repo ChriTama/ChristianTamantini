@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Dr. Christian Tamantini</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"><h1>Christian Tamantini</h1></div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="publications.html" class="nav-link">Publications</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero (stile identico a publications) -->
+  <section class="page-hero publications-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="page-hero-profile">
+          <img src="images/christian.jpeg" alt="Dr. Christian Tamantini" onerror="this.style.display='none'">
+        </div>
+        <div class="page-hero-text">
+          <h1>About</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio breve (tipografia coerente) -->
+  <section class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Fixed-Term Researcher at the <strong>Institute of Cognitive Sciences and Technologies (ISTC-CNR)</strong>, Planning & Scheduling Technology Lab (Rome).
+            I work at the intersection of <strong>robot-aided rehabilitation</strong>, <strong>cognitive/plan-based HRI</strong>, and
+            <strong>multimodal user-state estimation</strong> (affect, workload, kinematics) to deliver <em>personalized and adaptive</em> interventions.
+          </p>
+          <p>
+            I design AI-driven control and monitoring pipelines with real-time feedback to adapt robot coaching during therapy and over long-term horizons.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-robot"></i>
+              <div>
+                <h3>Focus Areas</h3>
+                <p>Rehab robotics · Cognitive architectures · Automated planning · Multimodal monitoring</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-project-diagram"></i>
+              <div>
+                <h3>Projects</h3>
+                <p>Fit4MedRob, SPINE4.0, ODIN, EXPERIENCE, HeAL9000, SENSE-RISC, TOTEM, RehabRobo@work</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointments & Employment (stessa timeline) -->
+  <section class="publications-section" id="employment">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-briefcase"></i> Appointments & Employment</h2>
+      </div>
+      <div class="publications-list">
+        <div class="publication-item">
+          <div class="publication-year">2024-now</div>
+          <div class="publication-content">
+            <h3>Fixed-Term Researcher</h3>
+            <p class="publication-authors">ISTC-CNR · Planning & Scheduling Technology Lab · Rome</p>
+            <p class="publication-journal">
+              Cognitive architectures for plan-based, personalized rehab; user-state estimation (affect, workload, kinematics) for adaptive robot coaching.
+            </p>
+          </div>
+        </div>
+        <div class="publication-item">
+          <div class="publication-year">2023-2024</div>
+          <div class="publication-content">
+            <h3>Postdoctoral Research Fellow</h3>
+            <p class="publication-authors">Università Campus Bio-Medico di Roma (CREO Lab)</p>
+            <p class="publication-journal">
+              <a class="publication-link" href="https://www.unicampus.it/en/progetto-di-ricerca/spine-4-0/" target="_blank"><strong>SPINE4.0</strong></a> - VR & mechatronic technologies for assessment and reintegration of workers with low-back pain.
+            </p>
+          </div>
+        </div>
+        <div class="publication-item">
+          <div class="publication-year">2022</div>
+          <div class="publication-content">
+            <h3>Visiting Student</h3>
+            <p class="publication-authors">Vrije Universiteit Brussel (Prof. B. Vanderborght)</p>
+            <p class="publication-journal">KUKA Innovation Award 2022 - user-state estimation for adaptive robot-aided rehabilitation.</p>
+          </div>
+        </div>
+        <div class="publication-item">
+          <div class="publication-year">2019-2023</div>
+          <div class="publication-content">
+            <h3>Research Collaborations</h3>
+            <p class="publication-authors">CREO Lab · UCBM</p>
+            <p class="publication-journal">
+              ODIN (H2020), SENSE-RISC, SAFE-MOVER, RehabRobo@work, SIRASI - roles in perception, user-state estimation and adaptive control.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education (stesso pattern di sezione) -->
+  <section class="publications-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-graduation-cap"></i> Education & Training</h2>
+      </div>
+      <div class="publications-list">
+        <div class="publication-item">
+          <div class="publication-year">2019-2022</div>
+          <div class="publication-content">
+            <h3>Ph.D. in Science and Engineering for Humans and the Environment - Bioengineering</h3>
+            <p class="publication-authors">Università Campus Bio-Medico di Roma</p>
+            <p class="publication-journal">
+              Thesis: <a class="publication-link" target="_blank" href="https://www.iris.unicampus.it/handle/20.500.12610/72047"><em>User State Estimation Methods for Tailoring Human-Robot Interaction</em></a>
+            </p>
+          </div>
+        </div>
+        <div class="publication-item">
+          <div class="publication-year">2020</div>
+          <div class="publication-content">
+            <h3>State Certification to practice as an Engineer</h3>
+            <p class="publication-authors">Università Campus Bio-Medico di Roma</p>
+          </div>
+        </div>
+        <div class="publication-item">
+          <div class="publication-year">2019-2020</div>
+          <div class="publication-content">
+            <h3>Postgraduate Advanced School in Artificial Intelligence</h3>
+            <p class="publication-authors">ISTC-CNR (Rome)</p>
+            <p class="publication-journal">Core courses: Machine Learning, Deep Learning, Computer Vision.</p>
+          </div>
+        </div>
+        <div class="publication-item">
+          <div class="publication-year">2016-2018</div>
+          <div class="publication-content">
+            <h3>M.Sc. in Biomedical Engineering (LM-21) - 110/110 cum laude</h3>
+            <p class="publication-authors">Università Campus Bio-Medico di Roma</p>
+            <p class="publication-journal">DMP-based planning & RGB-D perception for rehab robotics.</p>
+          </div>
+        </div>
+        <div class="publication-item">
+          <div class="publication-year">2012-2016</div>
+          <div class="publication-content">
+            <h3>B.Sc. in Medical Engineering (L-9)</h3>
+            <p class="publication-authors">University of Rome Tor Vergata</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Skills (bubbles + dot-matrix) -->
+<section class="skills-section skills-visual" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <h2>Skills &amp; Expertise</h2>
+    </div>
+
+    <div class="skills-flex">
+      <!-- SOFT SKILLS: bubble chart -->
+      <div class="soft-skills">
+        <h3 class="block-title"><i class="fas fa-puzzle-piece"></i> Soft Skills</h3>
+
+        <div class="bubble-wrap">
+          <div class="bubble bubble--center">BioEngineer</div>
+
+          <div class="bubble bubble--teach">Teaching</div>
+          <div class="bubble bubble--flex">Flexibility</div>
+          <div class="bubble bubble--team">Team working</div>
+          <div class="bubble bubble--prob">Problem<br/>Solving</div>
+          <div class="bubble bubble--motiv">Motivation</div>
+        </div>
+
+      </div>
+
+      <!-- SOFTWARE: dot matrix -->
+      <div class="softwares">
+        <h3 class="block-title"><i class="fas fa-code"></i> Software</h3>
+
+        <div class="matrix">
+          <!-- intestazione invisibile per accessibilità -->
+          <span class="sr-only">Proficiency from 1 (basic) to 6 (expert)</span>
+
+          <div class="row">
+            <div class="label">MS Office</div>
+            <div class="dots" aria-label="MS Office level 5 of 6">
+              <span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">Python</div>
+            <div class="dots" aria-label="Python level 6 of 6">
+              <span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">MATLAB</div>
+            <div class="dots" aria-label="MATLAB level 5 of 6">
+              <span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">ROS</div>
+            <div class="dots" aria-label="ROS level 5 of 6">
+              <span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">C# / Unity</div>
+            <div class="dots" aria-label="C# level 3 of 6">
+              <span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">C++</div>
+            <div class="dots" aria-label="C++ level 4 of 6">
+              <span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">C</div>
+            <div class="dots" aria-label="C level 3 of 6">
+              <span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">R</div>
+            <div class="dots" aria-label="R level 2 of 6">
+              <span class="dot fill"></span><span class="dot fill"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Christian Tamantini</h3>
+        <p>Researcher in Robotics and Artificial Intelligence at CNR-ISTC</p>
+      </div>
+      <div class="footer-section">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p><i class="fas fa-envelope"></i> christian.tamantini@cnr.it</p>
+        <p><i class="fas fa-map-marker-alt"></i> Rome, Italy</p>
+      </div>
+      <div class="footer-section">
+        <h3>Social</h3>
+        <div class="footer-social">
+          <a href="https://www.researchgate.net/profile/Christian-Tamantini" target="_blank"><i class="fab fa-researchgate"></i></a>
+          <a href="https://scholar.google.it/citations?user=oDOvd8oAAAAJ&hl=it" target="_blank"><i class="fas fa-book"></i></a>
+          <a href="https://www.linkedin.com/in/christian-tamantini/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://orcid.org/0000-0001-6238-2241" target="_blank"><i class="fab fa-orcid"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Christian Tamantini. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
