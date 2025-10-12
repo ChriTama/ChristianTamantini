@@ -847,17 +847,25 @@ section {
      border-radius: 12px;
 }
 
+/* Center images inside publication-figure */
+.publication-figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Responsive: stack image below on small screens */
 @media (max-width: 700px) {
      .publication-item {
           flex-direction: column;
-          gap: 1.25rem;
+          text-align: center;
+          align-items: center; /* added to center content */
      }
      .publication-figure {
           margin-left: 0;
           margin-top: 1rem;
           max-width: 100%;
-          justify-content: flex-start;
+          justify-content: center;
      }
 }
 
