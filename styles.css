@@ -292,15 +292,52 @@ section {
 }
 
 .hero-container {
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 24px;
-    position: relative;
-    z-index: 1;
+    padding: 0;
+    /* per evitare stretto su mobile */
+    box-sizing: border-box;
+}
+
+.hero-flex {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+/* Layout mobile: foto sopra, testo sotto e centrato */
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 0 0 2rem 0;
+    }
+    .hero-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1.2rem !important;
+        text-align: center;
+    }
+    .hero-profile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        order: -1;
+    }
+    .hero-profile img {
+        width: 145px !important;
+        height: 145px !important;
+        border-radius: 12px !important;
+        margin: 0 auto;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
 }
 
 .hero-content {
-    max-width: 720px;
+    max-width: 1420px;
     animation: slideUp 0.8s ease-out 0.2s both;
 }
 
