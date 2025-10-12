@@ -1530,6 +1530,24 @@ footer {
     }
 }
 
+/* --- HERO MOBILE LAYOUT --- */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        display: flex !important;
+        text-align: center;
+    }
+    .hero-profile {
+        margin-bottom: 1.5rem;
+        order: -1;
+        align-self: center;
+    }
+    .hero-content {
+        width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
     .container {
         padding: 0 16px;
