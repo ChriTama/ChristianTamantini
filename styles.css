@@ -1114,13 +1114,13 @@ footer {
 .award-icon {
     width: 64px;
     height: 64px;
-    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    background: linear-gradient(135deg, var(--green-600), var(--green-700));
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    box-shadow: 0 8px 16px rgba(245, 158, 11, 0.2);
+    box-shadow: 0 8px 16px rgba(22, 163, 74, 0.18);
 }
 
 .award-icon i {
@@ -1128,22 +1128,30 @@ footer {
     color: var(--white);
 }
 
-.award-content h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: var(--ink);
-}
-
-.award-year {
-    font-size: 0.875rem;
-    font-weight: 600;
+/* Icone link/award all'interno delle card awards */
+.award-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--green-100);
     color: var(--green-600);
-    margin-bottom: 0.5rem;
+    margin-right: 8px;
+    font-size: 1.25rem;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(22,163,74,0.08);
+    text-decoration: none;
 }
-
-.award-content p {
-    color: var(--muted);
-    font-size: 0.9375rem;
+.award-links a:last-child {
+    margin-right: 0;
+}
+.award-links a:hover,
+.award-links a:focus {
+    background: linear-gradient(135deg, var(--green-600), var(--green-700));
+    color: #fff;
+    transform: translateY(-2px) scale(1.08);
 }
 
 /* ============================================
